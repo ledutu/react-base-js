@@ -1,0 +1,19 @@
+@import "../../assets/styles/_global.scss";
+
+.checkBox {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    color: $black;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px;
+  }
+
+  &__labelFirst {
+    @extend .checkBox__label;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+}

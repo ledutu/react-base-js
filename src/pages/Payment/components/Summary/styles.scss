@@ -1,0 +1,188 @@
+@import "../../../../assets/styles/_global.scss";
+
+.summary {
+  border: 0;
+  padding-bottom: 140px;
+  &__header {
+    margin: 20px 0px 20px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &__editButton {
+    padding: 0 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: $blue !important;
+    font-weight: 700 !important;
+    
+  }
+
+  &__productContainer {
+    border-bottom: 1px solid $grey-004;
+  }
+  &__productInfo {
+    margin-bottom: 24px;
+    &-image {
+      margin-right: 12px;
+    }
+
+    &-product {
+      color: $black;
+      &-title {
+        margin: 0;
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+      &-amount {
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: $grey-002;
+      }
+      &-quantity {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      &-buttonGroupContainer {
+        display: flex;
+        align-items: center;
+
+        &-minus {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $primary;
+          color: $white;
+          border-radius: 4px;
+        }
+
+        &-quantity {
+          font-size: 12px;
+          line-height: 15px;
+          color: $black;
+          margin: 0px 10px;
+        }
+
+        &-plus {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $primary;
+          color: $white;
+          border-radius: 4px;
+        }
+      }
+
+      &-stock {
+        color: $grey-002;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &__price {
+    color: $black;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &__transactionText {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__paymentInfo {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $grey-004;
+    &-text {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: $grey-002;
+      line-height: 18px;
+    }
+
+    &-totalLabel {
+      font-size: 14px;
+      color: $black;
+      font-weight: 700;
+    }
+
+    &-totalValue {
+      font-size: 14px;
+      color: $black;
+      font-weight: 700;
+    }
+  }
+
+  &__checkoutText {
+    margin: 32px 0px 12px 0px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: $grey-002;
+
+    &-link {
+      color: $blue;
+      text-decoration: unset;
+    }
+  }
+
+  &__voucherCode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid $grey-005;
+
+    &-input {
+      border: 0;
+      height: 32px;
+      width: 100%;
+      padding: 13px 16px;
+
+      &:focus-visible {
+        border: 0;
+        outline: none;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: $black;
+      }
+    }
+
+    &-button {
+      flex: 1 !important;
+      height: 34px !important;
+      border-radius: 4px !important ;
+      margin-right: 7px !important;
+    }
+  }
+
+  &__cancelButtonContainer {
+    margin-top: 22px;
+    text-align: center;
+    width: 100%;
+
+    &-cancelButton {
+      color: $primary !important;
+      font-weight: 700 !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      text-decoration-color: $primary !important;
+    }
+  }
+}

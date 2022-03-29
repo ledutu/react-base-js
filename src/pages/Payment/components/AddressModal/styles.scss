@@ -1,0 +1,51 @@
+@import "../../../../assets/styles/_global.scss";
+
+.addressModal {
+  position: relative;
+  padding: 44px 20px 24px 20px;
+  min-width: 312px;
+  min-height: 332px;
+  border-radius: 16px;
+  margin-top: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-top: 24px;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  &__closeIcon {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+  }
+
+  &__addressItem {
+    color: $black;
+    font-size: 14px;
+    line-height: 18px;
+    border-bottom: 1px solid $grey-005;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &-title {
+      margin: 0;
+    }
+  }
+
+  &__buttonContainer {
+    text-align: center;
+    width: 100%;
+
+    &-button {
+      width: 80%;
+    }
+  }
+}

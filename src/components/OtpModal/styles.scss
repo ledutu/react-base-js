@@ -1,0 +1,61 @@
+@import "../../assets/styles/_global.scss";
+
+.otpModal {
+  padding: 99px 42px 0px 42px;
+  text-align: center;
+  position: relative;
+  border-radius: 16px;
+
+  &__closeIcon {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 18px;
+    color: $black;
+    font-weight: normal;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+    margin: 0px;
+  }
+
+  &__input {
+    width: 36px;
+    height: 40px;
+    background-color: $white;
+    border: 1px solid $grey-005;
+    border-radius: 4px;
+    padding: 11px 13px;
+    font-size: 16px;
+    line-height: 18px;
+    color: $black;
+    font-weight: 600;
+  }
+
+  &__footer {
+    font-size: 12px;
+    line-height: 18px;
+    color: $grey-002;
+  }
+}

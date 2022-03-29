@@ -1,0 +1,152 @@
+@import "../../../assets/styles/_global.scss";
+
+.checkoutConfirm {
+  // background-color: $primary;
+
+  &__container {
+    padding-top: 24px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__shopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 8px;
+    background-color: $white;
+    border-radius: 16px;
+    padding: 0px 16px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      &-title {
+        font-size: 14px;
+        line-height: 18px;
+        color: $black;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 12px;
+        font-weight: bold;
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+
+      &-title {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: $black;
+        margin-right: 8px;
+        margin-left: 8px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__formInfor {
+    background-color: $grey-006;
+    border-radius: 32px 32px 0px 0px;
+
+    &-cardInfoContainer {
+      text-align: center;
+      padding: 32px 20px 16px 20px;
+      background-color: $white;
+      border-radius: 32px 32px 0px 0px;
+      margin-bottom: 12px;
+
+      &-title {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.55px;
+        font-weight: normal;
+        padding: 0px 50px;
+        color: $black;
+      }
+
+      &-descriptionContainer {
+        background-color: $grey-006;
+        border-radius: 8px;
+        padding: 8px 16px;
+      }
+
+      &-descriptionText {
+        color: $black;
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      &-confirmText {
+        letter-spacing: -0.55px;
+        color: $grey-002;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &-detailContainer {
+      padding: 16px 20px;
+      background-color: $white;
+      padding-bottom: 200px;
+
+      &-label {
+        color: $black;
+        font-size: 12px;
+        line-height: 18px;
+        flex: 1;
+        margin: 0;
+      }
+
+      &-value {
+        flex: 1;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+      }
+
+      &-input {
+        flex: 1;
+      }
+
+      &-tag {
+        color: $grey-003;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__buttonContainer {
+    background-color: $white;
+    padding: 20px 16px;
+    position: fixed;
+    bottom: 0px;
+    max-width: 552px;
+    width: 100%;
+
+    &-button {
+      flex: 1;
+      margin-left: 6px;
+    }
+
+    &-buttonCancel {
+      flex: 1;
+      margin-right: 8px;
+    }
+
+    &-buttonCancelItem {
+      border-color: $primary !important;
+      color: $primary !important;
+    }
+  }
+}
